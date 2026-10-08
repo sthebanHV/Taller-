@@ -34,16 +34,35 @@ public class Main {
             opcion = leerEntero();
 
             switch (opcion) {
-                case 1 -> registrarPaciente();
-                case 2 -> registrarProfesional();
-                case 3 -> crearEquipo();
-                case 4 -> programarServicio();
-                case 5 -> registrarAtencion();
-                case 6 -> registrarMedicion();
-                case 7 -> notificarUsuario();
-                case 8 -> listarTodo();
-                case 0 -> System.out.println("Hasta luego!");
-                default -> System.out.println("Opcion no valida.");
+                case 1:
+                    registrarPaciente();
+                    break;
+                case 2:
+                    registrarProfesional();
+                    break;
+                case 3:
+                    crearEquipo();
+                    break;
+                case 4:
+                    programarServicio();
+                    break;
+                case 5:
+                    registrarAtencion();
+                    break;
+                case 6:
+                    registrarMedicion();
+                    break;
+                case 7:
+                    notificarUsuario();
+                    break;
+                case 8:
+                    listarTodo();
+                    break;
+                case 0:
+                    System.out.println("Hasta luego!");
+                    break;
+                default:
+                    System.out.println("Opcion no valida.");
             }
         } while (opcion != 0);
     }
